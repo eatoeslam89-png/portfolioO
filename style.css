@@ -234,43 +234,98 @@ nav ul li a:hover{
     background:#7C3AED;
     color:white;
     transform:translateY(-5px);
-}@media (max-width: 768px){.menu-icon{
-    display:block;
-}
+ } @media (max-width: 768px) {
 
-nav ul{
-    display:none;
-}
-
-    nav{
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    nav ul{
-        margin-top: 0px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .hero{
-        flex-direction: column-reverse;
-        text-align: center;
-        padding: 1px 1px;
-    }
-
-    .hero-text{
-        width: 100%;
-    }
-
-    .hero-image{
-        margin-top: 40px;
-    }
-    .social-icons{
-        display:flex;
-        justify-content:center;
-        flex-wrap:wrap;
-        gap:15px;
+        .menu-icon {
+            display: block;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+    
+        nav {
+            padding: 20px;
+            flex-direction: column;
+        }
+    
+        nav ul {
+            display: none;
+        }
+    
+        .hero {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            min-height: auto;
+        }
+    
+        .hero-text {
+            width: 100%;
+        }
+    
+        .hero-text h1 {
+            font-size: 36px;
+        }
+    
+        .hero-text h3 {
+            font-size: 20px;
+        }
+    
+        .hero-text p {
+            width: 100%;
+            font-size: 16px;
+        }
+    
+        .hero-image {
+            margin: 20px 0;
+        }
+    
+        .hero-image img{
+            width: 160px !important;
+            height: 160px !important;
+            margin-top: 0 !important;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+    
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+    
+        .about {
+            flex-direction: column;
+            text-align: center;
+            padding: 60px 20px;
+        }
+    
+        .about-image img {
+            width: 220px;
+        }
+    
+        .about-content p {
+            text-align: center;
+        }
+    
+        .portfolio-container,
+        .services-container {
+            grid-template-columns: 1fr;
+        }
+    
+        .contact {
+            padding: 60px 20px;
+        }
     }
 }
 .menu-icon{
